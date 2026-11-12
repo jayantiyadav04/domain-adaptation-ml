@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "scope": "Phase 03 runtime configuration and persistent storage verification",
+  "evidence_basis": "Student-reported Google Colab outputs reviewed against the issued setup cells; no project execution performed by the local assistant.",
+  "setup_revision": "setup-03-r1",
+  "protocol_version": "topic40-2026-11-12-r1",
+  "base_git_revision": "7fbd610f1cd171ebbefc5cb875fc8d7bdde60505",
+  "base_revision_meaning": "Public Phase 02 checkpoint preceding the setup-cell implementation; not the publication commit for Phase 03.",
+  "initial_runtime_recorded_utc": "2026-11-12T18:29:12.835307+00:00",
+  "fresh_runtime_recorded_utc": "2026-11-12T19:01:04.989857+00:00",
+  "runtime_type": "Colab CPU; hosted selection requires user confirmation",
+  "colab_runtime_indicator": true,
+  "accelerator_environment": "",
+  "python": "3.13.18",
+  "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "cpu": {
+    "model": "Intel(R) Xeon(R) CPU @ 2.20GHz",
+    "logical_cpus": 2
+  },
+  "packages": {
+    "numpy": "2.4.6",
+    "scipy": "1.16.3",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "matplotlib": "3.10.0",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0"
+  },
+  "seeds": [
+    11,
+    23,
+    37,
+    53,
+    71
+  ],
+  "estimator_n_jobs": 1,
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "thread_pools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "version": "0.3.29.dev",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "version": "0.3.31.188.0",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "openmp",
+      "internal_api": "openmp",
+      "num_threads": 1,
+      "prefix": "libgomp",
+      "version": null
+    }
+  ],
+  "verification": {
+    "marker_id_unchanged": true,
+    "marker_sha256_unchanged": true,
+    "kernel_identity_changed": true,
+    "notebook_at_expected_path": true,
+    "registered_seeds_match": true,
+    "estimator_threads_match": true,
+    "all_reported_numerical_threads_one": true,
+    "packages_cpu_and_thread_settings_unchanged": true,
+    "reported_persistence_pass": true
+  },
+  "verification_result": "PASS",
+  "limitations": [
+    "Runtime selection and reset/reopen menu actions were not independently observed.",
+    "Version values describe the observed sessions; no package installation or upgrade was performed in this phase."
+  ]
+}
