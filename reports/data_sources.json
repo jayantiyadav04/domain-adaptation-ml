@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "revision": "acquisition-04-r1",
+  "protocol": "topic40-2026-11-12-r1",
+  "base_git_revision": "63b2efb58b9e37d3348391722c07175cf6e67311",
+  "checked_utc": "2026-11-12T19:30:10.921456+00:00",
+  "datasets": [
+    {
+      "dataset": "gas",
+      "release": "UCI 224 plain benchmark; publisher notes batch10 correction 2013-10-14",
+      "original_url": "https://archive.ics.uci.edu/static/public/224/gas%2Bsensor%2Barray%2Bdrift%2Bdataset.zip",
+      "resolved_url": "https://archive.ics.uci.edu/static/public/224/gas%2Bsensor%2Barray%2Bdrift%2Bdataset.zip",
+      "source_page": "https://archive.ics.uci.edu/dataset/224/gas+sensor+array+drift+dataset",
+      "citation": "Vergara (2012), UCI dataset DOI 10.24432/C5RP6W",
+      "terms": "UCI: CC BY 4.0; legacy description also says research-only/noncommercial.",
+      "retrieved_utc": "2026-11-12T19:29:09.718595+00:00",
+      "bytes": 9989262,
+      "sha256": "91e8f466f202e7a093d657673ce47311c3e90416f7df3057966058961c351fe4",
+      "publisher_sha256": null,
+      "required_groups": {
+        "batches": [
+          "Dataset/batch1.dat",
+          "Dataset/batch2.dat",
+          "Dataset/batch3.dat",
+          "Dataset/batch4.dat",
+          "Dataset/batch5.dat",
+          "Dataset/batch6.dat",
+          "Dataset/batch7.dat",
+          "Dataset/batch8.dat",
+          "Dataset/batch9.dat",
+          "Dataset/batch10.dat"
+        ]
+      },
+      "file_members": 10,
+      "nested_archives": 0,
+      "acquisition_action": "REUSED_VERIFIED",
+      "cache_check": "REUSED_VERIFIED_NO_NETWORK"
+    },
+    {
+      "dataset": "har",
+      "release": "UCI 240 original HAR Using Smartphones; official train/test release",
+      "original_url": "https://archive.ics.uci.edu/static/public/240/human%2Bactivity%2Brecognition%2Busing%2Bsmartphones.zip",
+      "resolved_url": "https://archive.ics.uci.edu/static/public/240/human%2Bactivity%2Brecognition%2Busing%2Bsmartphones.zip",
+      "source_page": "https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones",
+      "citation": "Reyes-Ortiz et al. (2013), UCI dataset DOI 10.24432/C54S4K; Anguita et al., ESANN 2013",
+      "terms": "UCI: CC BY 4.0; retain attribution and original archive documentation.",
+      "retrieved_utc": "2026-11-12T19:29:16.709861+00:00",
+      "bytes": 61005872,
+      "sha256": "c00b803081a5c797cd5e4b83700a9810b38d53d9d84e01917e090e1fdbc81031",
+      "publisher_sha256": null,
+      "required_groups": {
+        "documentation": [
+          "UCI HAR Dataset.zip::UCI HAR Dataset/features.txt",
+          "UCI HAR Dataset.zip::UCI HAR Dataset/features_info.txt",
+          "UCI HAR Dataset.zip::UCI HAR Dataset/activity_labels.txt",
+          "UCI HAR Dataset.zip::UCI HAR Dataset/README.txt"
+        ],
+        "features": [
+          "UCI HAR Dataset.zip::UCI HAR Dataset/train/X_train.txt",
+          "UCI HAR Dataset.zip::UCI HAR Dataset/test/X_test.txt"
+        ],
+        "labels_unparsed": [
+          "UCI HAR Dataset.zip::UCI HAR Dataset/train/y_train.txt",
+          "UCI HAR Dataset.zip::UCI HAR Dataset/test/y_test.txt"
+        ],
+        "subjects": [
+          "UCI HAR Dataset.zip::UCI HAR Dataset/train/subject_train.txt",
+          "UCI HAR Dataset.zip::UCI HAR Dataset/test/subject_test.txt"
+        ]
+      },
+      "file_members": 64,
+      "nested_archives": 1,
+      "acquisition_action": "REUSED_VERIFIED",
+      "cache_check": "REUSED_VERIFIED_NO_NETWORK"
+    },
+    {
+      "dataset": "amazon",
+      "release": "Authors' Multi-Domain Sentiment page version 2.0; processed_acl.tar.gz",
+      "original_url": "https://www.cs.jhu.edu/~mdredze/datasets/sentiment/processed_acl.tar.gz",
+      "resolved_url": "https://www.cs.jhu.edu/~mdredze/datasets/sentiment/processed_acl.tar.gz",
+      "source_page": "https://www.cs.jhu.edu/~mdredze/datasets/sentiment/",
+      "citation": "Blitzer, Dredze and Pereira (ACL 2007), https://aclanthology.org/P07-1056/",
+      "terms": "Authors request citation and notification; no explicit licence grant on release page. No notification sent.",
+      "retrieved_utc": "2026-11-12T19:29:20.607229+00:00",
+      "bytes": 19633323,
+      "sha256": "92d68e2c85be192f908f16fd4c5c9eb4fe8c3be6d2fdf7f013427de7b81fbfdd",
+      "publisher_sha256": null,
+      "required_groups": {
+        "adapt_electronics": [
+          "processed_acl/electronics/unlabeled.review"
+        ],
+        "source_books": [
+          "processed_acl/books/positive.review",
+          "processed_acl/books/negative.review"
+        ],
+        "test_electronics": [
+          "processed_acl/electronics/positive.review",
+          "processed_acl/electronics/negative.review"
+        ]
+      },
+      "file_members": 12,
+      "nested_archives": 0,
+      "acquisition_action": "REUSED_VERIFIED",
+      "cache_check": "REUSED_VERIFIED_NO_NETWORK"
+    }
+  ],
+  "fingerprint_note": "Observed SHA-256; no independent publisher digest supplied.",
+  "scope": "Archive integrity and required file groups; row/schema audit remains pending.",
+  "cache_reuse_check": "PASS"
+}
