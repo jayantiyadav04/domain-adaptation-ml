@@ -6,11 +6,11 @@ For Logistic Regression, linear SVM and Random Forest, when does importance weig
 
 For each transfer pair and classifier, H1 predicts positive macro-F1 change from importance weighting and H2 predicts positive change from CORAL. Zero and negative effects remain reportable. Compare matched test IDs with seeds **11, 23, 37, 53, 71**.
 
-| Shift | Source → target | Adaptation / evaluation |
-|---|---|---|
-| Time: Gas Sensor Array Drift | Batch 1 → each batch 2–10 (nine pairs) | Seeded ID shuffle within each target batch; floor(N/2) adaptation rows, remainder evaluation |
-| People: smartphone HAR | 21 official training participants → official test participants | Four whole target participants for adaptation, five others for evaluation |
-| Category: Amazon sentiment | Books → Electronics | Released unlabelled Electronics reviews for adaptation, positive/negative Electronics reviews for evaluation |
+**Time: Gas Sensor Array Drift:** Batch 1 → each batch 2–10 (nine pairs). **Adaptation / evaluation:** Seeded ID shuffle within each target batch; floor(N/2) adaptation rows, remainder evaluation
+
+**People: smartphone HAR:** 21 official training participants → official test participants. **Adaptation / evaluation:** Four whole target participants for adaptation, five others for evaluation
+
+**Category: Amazon sentiment:** Books → Electronics. **Adaptation / evaluation:** Released unlabelled Electronics reviews for adaptation, positive/negative Electronics reviews for evaluation
 
 Three classifiers × source-only, importance weighting and CORAL give **nine main configurations**. Across 11 pairs and five seeds, plan **495 main rows**. A separate source-majority control contributes **one row per pair/seed, 55 total**; ties use sorted class ID. Removing the importance-weight cap contributes **165 separate ablation rows**, compared as uncapped minus capped. Exclude pilot, tuning and retry records from final totals.
 
