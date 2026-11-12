@@ -1,0 +1,32 @@
+# Local development pack and manual run records
+/docs/
+/prompts/
+/handoffs/
+/AGENTS.md
+
+# Private or regenerable Colab artifacts
+/raw/
+/data/
+/splits/
+/evaluation_keys/
+/runs/
+/predictions/
+/checkpoints/
+/artifacts/
+/drive/
+*.pkl
+*.joblib
+*.npz
+*.npy
+*.parquet
+*.tar.gz
+*.zip
+
+# Runtime and secrets
+.ipynb_checkpoints/
+__pycache__/
+.env
+.env.*
+*.pem
+.DS_Store
+Thumbs.db
